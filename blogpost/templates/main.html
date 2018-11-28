@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<nav>
+	<a href="/">Home | </a>
+	<a href="/search">Search | </a>
+	{% if user.is_authenticated %}
+	<a href="/logout">Logout | </a>
+	{% else %}
+	<a href="/login">Login | </a>
+	{% endif %}
+</nav>
+<p>Hi googooli:)</p>
+</body>
+</html>
